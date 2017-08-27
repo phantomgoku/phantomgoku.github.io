@@ -1,0 +1,135 @@
+@font-face {
+    font-family: bodyfont;
+    src: url(assets/creg.ttf);
+}
+@font-face {
+    font-family: titlefont;
+    src: url(assets/cbold.ttf);
+}
+@font-face {
+    font-family: fixwidth;
+    src: url(assets/fix.ttf);
+}
+
+body {
+	background: #eee /*url("assets/Skull_Rotating.gif") repeat;*/
+}
+
+h1 {
+	
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    border-bottom: 10px solid #ccc;
+    background:#fff;
+    color: #222;
+    text-align: left;
+    font-family: "titlefont","Helvetica","Arial";
+    font-size: 40px;
+}
+h2 {
+	
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    border-bottom: 10px solid #ccc;
+    background:#fff;
+    color: #222;
+    text-align: left;
+    font-family: "titlefont","Helvetica","Arial";
+    font-size: 30px;
+}
+a {
+	text-decoration: none;
+	color: #ccc;
+	}
+a:link {
+    color: #222;
+}
+a:visited {
+	color: #222;
+}
+a:hover {
+    color: #666;
+}
+a:active {
+    color: #fff;
+} 
+
+p {
+	margin:5%;
+	padding: 5%;
+	border-left: 10px solid #ccc;
+	background: #eee;
+    text-align: left;
+    font-family: "bodyfont","Helvetica","Arial";
+    font-size: 20px;
+    color: #222
+}
+
+
+
+
+
+/*a foldy down hing*/
+input {
+  display: none;
+  visibility: hidden;
+}
+label {
+  display: block;
+  margin: 3%;
+  padding: 0%;
+  border: none;
+    background:#f55;
+    color: #222;
+    text-align: left;
+    font-family: "bodyfont","Helvetica","Arial";
+    font-size: 30px;
+}
+label:hover {
+  color: #666;
+}
+label::before {
+	margin-left: 5%;
+    padding: 1%;
+    border: none;
+    background:#F55;
+    color: #222;
+    text-align: left;
+    font-family: "fixwidth","Helvetica","Arial";
+    font-size: 30px;
+    content:"+";
+}
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  color: #FFF;
+}
+section {
+  padding: 0;
+}
+#toggle:checked ~ #expand {
+  height: 250px;
+}
+#toggle:checked ~ label::before {
+content:"-";
+}
+
+/* copy this and change number to add a box*/
+#expand2 {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  color: #FFF;
+}
+#toggle2:checked ~ #expand2 {
+  height: 250px;
+}
+#toggle2:checked ~ label::before {
+content:"-";
+}
+/*end copy zone*/
