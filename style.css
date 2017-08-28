@@ -83,7 +83,7 @@ label {
   margin: 3%;
   padding: 0%;
   border: none;
-    background:#f55;
+    background:#eee;
     color: #222;
     text-align: left;
     font-family: "bodyfont","Helvetica","Arial";
@@ -94,14 +94,14 @@ label:hover {
 }
 label::before {
 	margin-left: 5%;
-    padding: 1%;
+    padding: 0%;
     border: none;
-    background:#F55;
+    background:#eee;
     color: #222;
     text-align: left;
-    font-family: "fixwidth","Helvetica","Arial";
+    /*font-family: "fixwidth","Helvetica","Arial";*/
     font-size: 30px;
-    content:"+";
+    content: ">";
 }
 #expand {
   height: 0px;
@@ -116,7 +116,7 @@ section {
   height: 250px;
 }
 #toggle:checked ~ label::before {
-content:"-";
+content: ">";
 }
 
 /* copy this and change number to add a box*/
@@ -130,6 +130,6 @@ content:"-";
   height: 250px;
 }
 #toggle2:checked ~ label::before {
-content:"-";
+content:">";
 }
 /*end copy zone*/
