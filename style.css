@@ -105,7 +105,7 @@ label::before {
 }
 #expand {
   height: 0px;
-  overflow: hidden;
+  overflow: auto;
   transition: height 0.5s;
   color: #FFF;
 }
@@ -122,7 +122,7 @@ content: ">";
 /* copy this and change number to add a box*/
 #expand2 {
   height: 0px;
-  overflow: hidden;
+  overflow: auto;
   transition: height 0.5s;
   color: #FFF;
 }
