@@ -70,25 +70,29 @@
           </div><!-- /.blog-post -->
 
           <div class="blog-post">
-            <h2 class="blog-post-title">New feature</h2>
-            <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+            <h2 class="blog-post-title"><a href="progman.html">Program Interruption Manager </a></h2>
+            <p class="blog-post-meta">January 1, 2014 by <a href="#">Matt</a></p>
 
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <ul>
-              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-              <li>Donec id elit non mi porta gravida at eget metus.</li>
-              <li>Nulla vitae elit libero, a pharetra augue.</li>
-            </ul>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-          </div><!-- /.blog-post -->
+            <p>I built a cool and useful thing for the radio station, using on-hand documentation and some brightly colored buttons. Check it out! </p>
+            <hr>
+            <h3>Background</h3>
+            <p>Live Audio streams at WSBF go through a machine that  adds a delay. This is so if a mistake on air occurs there is a enough time to prevent the mistake from going out 
+			 on air. Unfortunately, the only available location for the unit was difficult to reach, especially in the cramped desk space. Additionally, we had users in wheelchairs who were unable to access inital location.
+			 The finished product is an extension of the user interface for that delay module that was placed in a sensible position, thanks to an empty expansion panel on the mixing board.</p>
+            <img src="/controlboard/2.jpg" class="img-fluid" alt="Responsive image">
+			<h3>Construction</h3>
+			<p>In the documentation for the Program Interruption Manager was the pinout for the serial port of the unit. With a pins jumped, it would send auxilliary control of the unit
+			to addtional pins. The original diagram had the indicator lights (if a button was pressed for example) separate from the switches.</p>
+            <p>I wanted to incorporate lights and UI into one unit. As i was working on restoring a vintage arcade machine at the time, I picked up some very cool looking Ultralux Chrome Illuminated Pushbuttons from <a href="http://www.ultimarc.com"> This arcade supply store</a>. </p>
+            <p>I chose the specific color buttons you can see here due to them most closely resembling the original panel of the manager. </p>
+            <img src="/controlboard/3.jpg" class="img-fluid" alt="Responsive image">
 
-          <nav class="blog-pagination">
-            <a class="btn btn-outline-primary" href="#">Older</a>
-            <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-          </nav>
+            <h3>Finished Product and Potential Expansions</h3>
+			<p> The serial port is also capable of pushing how much time is left on the delay module to a microcontroller. However, at the time I was unsure how to interface with the older protocol as well as a seven segment display. I've recommended an expansion
+			of that caliber to be done as a good project for future Chief Engineers at WSBF-FM Clemson. You can see me hardstyling above the finished product below.</p>
+						<img src="/controlboard/4.jpg" class="img-fluid" alt="Responsive image">
 
-        </div><!-- /.blog-main -->
+          </div>
 
         <div class="col-sm-3 offset-sm-1 blog-sidebar">
           <div class="sidebar-module sidebar-module-inset">
